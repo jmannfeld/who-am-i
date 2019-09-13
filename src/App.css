@@ -37,7 +37,23 @@ input {
 }
 
 input#name {
-  width: 150px;
+  width: 250px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-width: 2px;
+  background-color: #ffffff;
+  color: black;
+  height: 20px;
 }
 
 input[type="color"] {
@@ -45,12 +61,15 @@ input[type="color"] {
   padding: 0;
 }
 
-div.name {
-  justify-content: flex-start;
-  padding: 10px;
+div.image {
+  padding-left: 20px;
 }
 
-div.name > input {
+div.name, div.image {
+  justify-content: flex-start;
+}
+
+div.name > input, div.image > input {
   height: 30px;
   font-size: 20px;
 }
@@ -64,13 +83,22 @@ div.name > input {
   width: 500px;
 }
 
-.input-field {
+.field {
   padding: 10px;
 }
 
-.input-field.split {
+.field.split {
   display: flex;
-  margin: 0 auto;  
+}
+
+.field.split.colors {
+  margin: 0 auto; 
+}
+
+.field.split.person-details {
+  padding-bottom: 40px;
+  border-bottom: 3px solid white;
+  margin-bottom: 15px;
 }
 
 button {
