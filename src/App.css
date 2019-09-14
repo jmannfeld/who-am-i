@@ -111,3 +111,7 @@ button {
   margin: 5px 10px;
   align-self: flex-end;
 }
+
+svg {
+  font-family: Helvetica, sans-serif;
+}

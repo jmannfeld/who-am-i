@@ -20,16 +20,7 @@ const MysteryTile = ({ name, image, facts, borderColor, backgroundColor }) => (
     />
     <defs>
       <mask id="shape-mask">
-        <rect
-          width="30%"
-          height="65%"
-          fill="white"
-          stroke={borderColor}
-          strokeWidth="3"
-          rx="5"
-          x="45"
-          y="45"
-        />
+        <rect width="30%" height="65%" fill="white" rx="5" x="45" y="45" />
       </mask>
     </defs>
     <rect
@@ -37,7 +28,7 @@ const MysteryTile = ({ name, image, facts, borderColor, backgroundColor }) => (
       height="65%"
       fill="white"
       stroke={borderColor}
-      strokeWidth="3"
+      strokeWidth="7"
       rx="5"
       x="45"
       y="45"

@@ -2,13 +2,15 @@
 Todo:
   ☐ Border width slider
   ☐ Mystery vs real toggle
-  ☐ Change font
   ☐ Font selecter
   ☐ Remove button hover styles
   ☐ Change filename based on mystery
   ☐ Add X's to clear inputs
   ☐ Adjust layout
-  ☐ Fix weird border with svg mask
+  ☐ Save settings in local storage
+  ☐ Random colors button
   
 Archive:
+  ✔ Fix weird border with svg mask @done(19-09-14 15:00) @project(Todo)
+  ✔ Change font @done(19-09-14 14:36) @project(Todo)
   ✔ Add ESLint @done(19-09-14 13:42) @project(Todo)

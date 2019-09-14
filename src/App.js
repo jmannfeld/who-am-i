@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import './App.css'
 import MysteryTile from './MysteryTile'
-import mysteryPerson from './images/mystery-person.png'
+import mysteryPerson from './images/mystery.png'
 
 const { saveSvgAsPng } = require('save-svg-as-png')
 
 function App() {
-  const [borderColor, setBorderColor] = useState('#FF43E3')
   const [backgroundColor, setBackgroundColor] = useState('#FAD0EA')
+  const [borderColor, setBorderColor] = useState('#FF43E3')
   const [name, setName] = useState('Mr/Ms X')
   const [image, setImage] = useState(mysteryPerson)
   const [factOne, setFactOne] = useState(null)
@@ -55,18 +55,6 @@ function App() {
         </button>
         <div className="field split colors">
           <div className="field">
-            <label htmlFor="border-color">
-              Highlight Color:
-              <input
-                onChange={e => setBorderColor(e.target.value)}
-                value={borderColor}
-                type="color"
-                name="border-color"
-                id="border-color"
-              />
-            </label>
-          </div>
-          <div className="field">
             <label htmlFor="background-color">
               Background Color:
               <input
@@ -78,13 +66,29 @@ function App() {
               />
             </label>
           </div>
+          <div className="field">
+            <label htmlFor="border-color">
+              Highlight Color:
+              <input
+                onChange={e => setBorderColor(e.target.value)}
+                value={borderColor}
+                type="color"
+                name="border-color"
+                id="border-color"
+              />
+            </label>
+          </div>
         </div>
         <div className="field split person-details">
           <div className="name">
             <label htmlFor="name">
               Name:
               <input
-                onChange={e => setName(e.target.value)}
+                onChange={e =>
+                  e.target.value !== ''
+                    ? setName(e.target.value)
+                    : setName('Mr/Mrs X')
+                }
                 type="text"
                 name="name"
                 id="name"
