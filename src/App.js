@@ -49,97 +49,114 @@ function App() {
           onClick={downloadSvg}
           onMouseEnter={e => addButtonHighlight(e.target)}
           onMouseLeave={e => removeButtonHighlight(e.target)}
+          type="button"
         >
           Download PNG
         </button>
         <div className="field split colors">
           <div className="field">
-            <label htmlFor="border-color">Highlight Color:</label>
-            <input
-              onChange={e => setBorderColor(e.target.value)}
-              value={borderColor}
-              type="color"
-              name="border-color"
-              id="border-color"
-            />
+            <label htmlFor="border-color">
+              Highlight Color:
+              <input
+                onChange={e => setBorderColor(e.target.value)}
+                value={borderColor}
+                type="color"
+                name="border-color"
+                id="border-color"
+              />
+            </label>
           </div>
           <div className="field">
-            <label htmlFor="background-color">Background Color:</label>
-            <input
-              onChange={e => setBackgroundColor(e.target.value)}
-              value={backgroundColor}
-              type="color"
-              name="background-color"
-              id="background-color"
-            />
+            <label htmlFor="background-color">
+              Background Color:
+              <input
+                onChange={e => setBackgroundColor(e.target.value)}
+                value={backgroundColor}
+                type="color"
+                name="background-color"
+                id="background-color"
+              />
+            </label>
           </div>
         </div>
         <div className="field split person-details">
           <div className="name">
-            <label htmlFor="name">Name:</label>
-            <input
-              onChange={e => setName(e.target.value)}
-              type="text"
-              name="name"
-              id="name"
-            />
+            <label htmlFor="name">
+              Name:
+              <input
+                onChange={e => setName(e.target.value)}
+                type="text"
+                name="name"
+                id="name"
+              />
+            </label>
           </div>
           <div className="image">
             <label htmlFor="image-upload" className="custom-file-upload">
               Upload Image
+              <input
+                onChange={e => transformImage(e.target)}
+                type="file"
+                name="image-upload"
+                id="image-upload"
+              />
             </label>
-            <input
-              onChange={e => transformImage(e.target)}
-              type="file"
-              name="image-upload"
-              id="image-upload"
-            />
           </div>
         </div>
         <div className="field">
-          <label htmlFor="fact-1">Fact 1:</label>
-          <input
-            onChange={e => setFactOne(e.target.value)}
-            type="text"
-            name="fact-1"
-            id="fact-1"
-          />
+          <label htmlFor="fact-1">
+            Fact 1:
+            <input
+              onChange={e => setFactOne(e.target.value)}
+              type="text"
+              name="fact-1"
+              id="fact-1"
+            />
+          </label>
         </div>
         <div className="field">
-          <label htmlFor="fact-2">Fact 2:</label>
-          <input
-            onChange={e => setFactTwo(e.target.value)}
-            type="text"
-            name="fact-2"
-            id="fact-2"
-          />
+          <label htmlFor="fact-2">
+            Fact 2:
+            <input
+              onChange={e => setFactTwo(e.target.value)}
+              type="text"
+              name="fact-2"
+              id="fact-2"
+            />
+          </label>
         </div>
         <div className="field">
-          <label htmlFor="fact-3">Fact 3:</label>
-          <input
-            onChange={e => setFactThree(e.target.value)}
-            type="text"
-            name="fact-3"
-            id="fact-3"
-          />
+          <label htmlFor="fact-3">
+            Fact 3:
+            <input
+              onChange={e => setFactThree(e.target.value)}
+              type="text"
+              name="fact-3"
+              id="fact-3"
+            />
+          </label>
         </div>
         <div className="field">
-          <label htmlFor="fact-4">Fact 4:</label>
-          <input
-            onChange={e => setFactFour(e.target.value)}
-            type="text"
-            name="fact-4"
-            id="fact-4"
-          />
+          <label htmlFor="fact-4">
+            Fact 4:
+            <input
+              onChange={e => setFactFour(e.target.value)}
+              type="text"
+              name="fact-4"
+              id="fact-4"
+            />
+          </label>
         </div>
         <div className="field">
-          <label htmlFor="fact-5">Fact 5:</label>
-          <input
-            onChange={e => setFactFive(e.target.value)}
-            type="text"
-            name="fact-5"
-            id="fact-5"
-          />
+          <label htmlFor="fact-5">
+            Fact 5:
+            <input
+              onChange={e => setFactFive(e.target.value)}
+              type="text"
+              name="fact-5"
+              id="fact-5"
+            />
+          </label>
         </div>
       </div>
     </div>

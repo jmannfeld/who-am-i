@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './App.css'
 
 const MysteryTile = ({ name, image, facts, borderColor, backgroundColor }) => (
@@ -81,5 +82,13 @@ const MysteryTile = ({ name, image, facts, borderColor, backgroundColor }) => (
     </g>
   </svg>
 )
+
+MysteryTile.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.string,
+  facts: PropTypes.array,
+  borderColor: PropTypes.string,
+  backgroundColor: PropTypes.string,
+}
 
 export default MysteryTile

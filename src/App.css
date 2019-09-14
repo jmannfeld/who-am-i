@@ -34,6 +34,7 @@ input {
   background-color: #ffffff;
   border-color: #d8d8d8;
   border-style: solid;
+  margin-left: 10px;
 }
 
 input#name {
@@ -80,7 +81,7 @@ div.name > input, div.image > input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 500px;
+  width: 510px;
 }
 
 .field {

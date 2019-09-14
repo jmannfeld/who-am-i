@@ -8,4 +8,7 @@ Todo:
   ☐ Change filename based on mystery
   ☐ Add X's to clear inputs
   ☐ Adjust layout
-  ☐ Add ESLint
+  ☐ Fix weird border with svg mask
+  
+Archive:
+  ✔ Add ESLint @done(19-09-14 13:42) @project(Todo)
