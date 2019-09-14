@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import MysteryTile from './MysteryTile';
-import mysteryPerson from './images/mystery-person.jpg';
+import mysteryPerson from './images/mystery-person.png';
 
 const { saveSvgAsPng } = require('save-svg-as-png');
 
