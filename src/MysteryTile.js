@@ -10,6 +10,7 @@ const MysteryTile = ({name, image, facts, borderColor, backgroundColor}) => {
           <rect width="30%" height="65%" fill="white" stroke={borderColor} strokeWidth="3" rx="5" x="45" y="45"></rect>
 				</mask>
 			</defs>
+      <rect width="30%" height="65%" fill="white" stroke={borderColor} strokeWidth="3" rx="5" x="45" y="45"></rect>
 			<image width="30%" height="65%" x="45" y="45" preserveAspectRatio="xMidYMid slice" xlinkHref={image} mask="url(#shape-mask)"></image>
       <text width="30%" x="90" y="315" fontSize="24" fontWeight="bold" fill={borderColor}>{name}</text>
       <g>
