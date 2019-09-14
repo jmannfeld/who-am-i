@@ -29,8 +29,8 @@ function App() {
   }
 
   function transformImage(target) {
-    URL.createObjectURL(target.files[0])
-    setImage(URL.createObjectURL(target.files[0]))
+    const file = URL.createObjectURL(target.files[0]);
+    setImage(file);
   }
 
   function addButtonHighlight(button) {
