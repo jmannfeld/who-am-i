@@ -65,9 +65,18 @@ const MysteryTile = ({ name, image, facts, borderColor, backgroundColor }) => (
       </text>
       {facts.map((fact, i) =>
         fact ? (
-          <text x="285" y={110 + 40 * i} key={i} fill="black" fontSize="20">
-            {i + 1}. {fact}
-          </text>
+          <foreignObject
+            x="285"
+            y={90 + 60 * i}
+            width="325"
+            height="100"
+            key={i}
+            fill="black"
+            fontSize="20"
+            className="fact-text"
+          >
+            {`${i + 1}. ${fact}`}
+          </foreignObject>
         ) : null
       )}
     </g>

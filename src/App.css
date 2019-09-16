@@ -41,7 +41,7 @@ input#name {
   width: 250px;
 }
 
-input[type="file"] {
+input[type='file'] {
   display: none;
 }
 
@@ -57,7 +57,7 @@ input[type="file"] {
   height: 20px;
 }
 
-input[type="color"] {
+input[type='color'] {
   width: 50px;
   padding: 0;
 }
@@ -66,11 +66,13 @@ div.image {
   padding-left: 20px;
 }
 
-div.name, div.image {
+div.name,
+div.image {
   justify-content: flex-start;
 }
 
-div.name > input, div.image > input {
+div.name > input,
+div.image > input {
   height: 30px;
   font-size: 20px;
 }
@@ -93,7 +95,7 @@ div.name > input, div.image > input {
 }
 
 .field.split.colors {
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .field.split.person-details {
@@ -114,4 +116,8 @@ button {
 
 svg {
   font-family: Helvetica, sans-serif;
+}
+
+.fact-text {
+  text-align: left;
 }
